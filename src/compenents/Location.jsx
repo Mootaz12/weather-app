@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Box, Typography } from "@mui/material";
 
-const Location = ({ weatherData }) => {
+export default function Location({ weatherData }) {
   const daysOfWeek = [
     "Sunday",
     "Monday",
@@ -25,6 +25,4 @@ const Location = ({ weatherData }) => {
       <Typography variant="h3">{currentTime}</Typography>
     </Box>
   );
-};
-
-export default Location;
+}

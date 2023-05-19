@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Box, Typography } from "@mui/material";
 
-const Weather = ({ weatherData }) => {
+export default function Weather({ weatherData }) {
   return (
     <Box className="weather">
       <Box className="weather-info-container">
@@ -21,6 +21,4 @@ const Weather = ({ weatherData }) => {
       </Typography>
     </Box>
   );
-};
-
-export default Weather;
+}

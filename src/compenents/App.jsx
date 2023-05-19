@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Location from "./Location";
 import Weather from "./Weather";
-import NextDaysWeather from "./NextDaysWeather";
+import WeatherStats from "./WeatherStats";
 
 export default function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -61,7 +61,7 @@ export default function App() {
           <Weather weatherData={weatherData} />
         </Grid>
         <Grid item>
-          <NextDaysWeather weatherData={weatherData} />
+          <WeatherStats weatherData={weatherData} />
         </Grid>
       </Grid>
     </Box>

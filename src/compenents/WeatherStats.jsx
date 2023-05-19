@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { Box, Typography, Card, CardContent } from "@mui/material";
 
-const NextDaysWeather = ({ weatherData }) => {
+export default function WeatherStats({ weatherData }) {
   const { wind_kph, wind_dir, pressure_mb, humidity } = weatherData.current;
 
   return (
-    <Box className="next-days-weather">
+    <Box className="weather-stats">
       <Card className="card">
         <CardContent>
           <Typography variant="h5">Wind</Typography>
@@ -27,6 +27,4 @@ const NextDaysWeather = ({ weatherData }) => {
       </Card>
     </Box>
   );
-};
-
-export default NextDaysWeather;
+}
